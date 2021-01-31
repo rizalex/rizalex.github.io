@@ -1,0 +1,50 @@
+I")<div class="container">
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-9">
+                <h2 class="font-weight-bold">Rizal <span class="small btn btn-outline-success btn-sm btn-round"><a href="https://twitter.com/zalardian">Follow</a></span></h2>
+                <p><a href="https://sites.google.com/view/greyarea101">https://sites.google.com/view/greyarea101</a></p>
+                <p class="excerpt">Hi, I am Rizal, the owner of this site, thanks to coming and please share if you like it!</p>
+            </div>
+            <div class="col-md-3 text-right">
+                <img alt="Rizal" src="/assets/images/IMG_5231.jpg" class="rounded-circle" height="100" width="100" />
+            </div>
+        </div>
+        <h4 class="font-weight-bold spanborder"><span>Posts by Rizal</span></h4>
+            
+            
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/seperti-apakah-pekerjaan-cybersecurity/">Seperti apakah pekerjaan CyberSecurity? (Blue Team)</a>
+	</h2>
+	<p class="excerpt">
+	   Hai, kembali… kali ini saya mau bercerita dari perspektif seorang CyberSecurity Defender atau Blue Team mengenai apa yang dilakukan dan yang saya kerjakan dalam pengamanan teknologi i...
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#cybersecurity">CyberSecurity</a><span class="sep">, </span>
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#story">Story</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 08, 2019
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/seperti-apakah-pekerjaan-cybersecurity/">
+	<img class="w-100" src="/assets/images/demo1.jpg" alt="Seperti apakah pekerjaan CyberSecurity? (Blue Team)" />
+	</a>
+	</div>
+
+</div>
+            
+    </div>
+</div>
+</div>
+:ET
