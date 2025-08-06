@@ -1,0 +1,11 @@
+- name: Information Security/ Cybersecurity
+  percentage: 100
+  color: danger
+
+- name: Cloud Security
+  percentage: 90
+  color:
+
+- name: Engineer/ Architect
+  percentage: 80
+  color: secondary

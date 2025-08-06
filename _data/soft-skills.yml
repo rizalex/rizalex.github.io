@@ -1,0 +1,7 @@
+- name: Community
+  percentage: 100
+  color: info
+
+- name: Team Lead
+  percentage: 90
+  color: success
