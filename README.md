@@ -37,5 +37,5 @@ This project is my digital playground for sharing knowledge, showcasing projects
 ├── assets/             # Images
 ├── pages/              # Pages profile
 ├── _config.yml         # Site configuration
+├── Gemfile             # Dependencies
 └── ...
-
