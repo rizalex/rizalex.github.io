@@ -39,3 +39,7 @@ This project is my digital playground for sharing knowledge, showcasing projects
 ├── _config.yml         # Site configuration
 ├── Gemfile             # Dependencies
 └── ...
+
+## Template Credit
+
+By John Doe > https://yousinix.github.io/portfolYOU/ 
