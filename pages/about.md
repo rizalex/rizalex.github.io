@@ -8,7 +8,7 @@ weight: 3
 # **About Me**
 
 Greetings, I'm <b>Syafrizal S. Ardiansyah</b> :wave: -an Indonesian cybersecurity professional with a passion for defending the digital frontier. With over seven years of experience in information security engineering and operations, I specialize in blue-team defense, cloud security, and enterprise risk so on.
-My journey began in Medan, Sumatra, and has taken me across Indonesia's & Glbal, where I’ve embraced diverse cultures and landscapes. This nomadic lifestyle fuels my curiosity and drives my commitment to continuous learning and exploration.
+My journey began in Medan, Sumatra, and has taken me across Indonesia's & Global, where I’ve embraced diverse cultures and landscapes. This nomadic lifestyle fuels my curiosity and drives my commitment to continuous learning and exploration.
 
 Professionally, I've contributed to Horangi Cybersecurity, a Singapore-based firm recognized for its CREST-accredited cybersecurity services and the cloud-native platform. Now, in Global Cybersecurity Company with advanced security capabilities.
 
