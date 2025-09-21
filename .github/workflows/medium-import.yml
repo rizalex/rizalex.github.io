@@ -1,0 +1,40 @@
+# .github/workflows/import-medium.yml
+name: Import Medium posts to Jekyll
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.9"       # ✅ use an exact version (e.g., 3.3.9 or 3.4.6)
+          bundler-cache: true
+
+      - name: Install tools
+        run: |
+          gem install jekyll-import rss safe_yaml
+
+      - name: Import Medium posts
+        run: |
+          bundle exec jekyll import medium \
+            --username rizalex \
+            --canonical_link true
+
+      - name: Commit new posts (if any)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add _posts
+          git commit -m "Import Medium posts" || echo "No changes"
+          git push
