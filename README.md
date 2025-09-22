@@ -22,9 +22,9 @@ This project is my digital playground for sharing knowledge, showcasing projects
 - **Fast, minimal, and responsive Jekyll theme**
 - Dark mode support
 - Integrated with Medium RSS (auto-sync articles)
-- SEO, performance & privacy best practices
-- [Optional] Progressive Web App (PWA) support
-- [Optional] Portfolio and blog sections
+- Progressive Web App (PWA) support
+- Portfolio and blog sections
+- ??? SEO, performance & privacy best practices
 
 ---
 
