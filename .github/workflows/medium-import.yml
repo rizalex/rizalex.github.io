@@ -1,5 +1,5 @@
-# .github/workflows/import-medium.yml
-name: Import Medium posts to Jekyll
+# .github/workflows/medium-import.yml
+name: import-medium-posts-jekyll
 
 on:
   schedule:
@@ -25,7 +25,7 @@ jobs:
         run: |
           gem install jekyll-import rss safe_yaml
 
-      - name: Import Medium posts
+      - name: Import latest Medium posts
         run: |
           bundle exec jekyll import medium \
             --username rizalex \
@@ -36,5 +36,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add _posts
-          git commit -m "Import Medium posts" || echo "No changes"
+          git commit -m "Import latest Medium posts" || echo "No changes"
           git push
