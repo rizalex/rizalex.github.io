@@ -4,7 +4,7 @@ description         : >-
                       <h3><b>Syafrizal S Ardiansyah</b></h3>
                       life; eat; explore; secure; REPEAT!
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-#repository          : yousinix/portfolYOU      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+repository          : rizalex/rizalex.github.io
 remote_theme        : yousinix/portfolYOU
 open_new_tab        : false                    # Opens external URLs in new tab (works for posts, projects and navbar only)
 
@@ -104,6 +104,7 @@ defaults:
 ### Exclude from processing ###
 exclude:
   - README.md
+  - CLAUDE.md
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
