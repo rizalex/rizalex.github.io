@@ -1,0 +1,61 @@
+{%- comment -%} Local override of portfolYOU theme's blog/post-card.html.
+  Differences from upstream:
+  1. Excerpt uses `strip_html` before `truncatewords` — Medium-imported
+     posts contain raw HTML, and truncating raw HTML injects nested block
+     tags (<h3>/<p>) plus unclosed inline tags into the card, which breaks
+     the Bootstrap grid and duplicates post titles inside excerpts.
+  2. Tags fall back to `post.tag` (singular) — the Medium importer writes
+     `tag:` while the theme reads `post.tags`.
+{%- endcomment -%}
+{%- comment -%} Default Styles {%- endcomment -%}
+{%- assign card_style  = '' -%}
+{%- assign text_style  = 'text-themed' -%}
+{%- assign badge_style = 'badge-dark' -%}
+
+{%- comment -%} Update Styles {%- endcomment -%}
+{%- if post.style == 'fill' -%}
+  {%- assign card_style = post.color | prepend: 'bg-' -%}
+  {%- if post.color != 'light' -%}
+    {%- assign text_style  = 'text-white' -%}
+    {%- assign badge_style = 'badge-light text-' -%}
+    {%- assign badge_style = badge_style | append: post.color -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign card_style = post.color | prepend: 'border border-' -%}
+  {%- if post.color -%}
+    {%- assign badge_style =  post.color | prepend: 'badge-' -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} Determine Post URL {%- endcomment -%}
+{%- if post.external_url -%}
+  {%- assign post_url = post.external_url -%}
+{%- else -%}
+  {%- assign post_url = post.url | relative_url -%}
+{%- endif -%}
+
+{%- comment -%} Tags (support both `tags:` and importer-style `tag:`) {%- endcomment -%}
+{%- assign post_tags = post.tags | default: post.tag -%}
+    
+<div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+    <div class="card-body {{ text_style }}">
+      <h3 class="card-title">{{ post.title }}</h3>
+      <p class="card-text">
+        {% for tag in post_tags %}
+        <span class="badge {{ badge_style }}">{{ tag }}</span>
+        {% endfor %}
+      </p>
+      <p class="card-text">
+        {%- if post.description -%}
+        {{ post.description }}
+        {%- else -%}
+        {{ post.content | strip_html | truncatewords: 25, "<small><i>  read more...</i></small>" }}
+        {%- endif -%}
+      </p>
+    </div>
+    <div class="card-footer {{ text_style }}">
+      {{ post.date | date_to_long_string }}
+    </div>
+  </a>
+</div>
